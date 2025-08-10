@@ -1,0 +1,31 @@
+name: MenuPy
+options:
+  minimumXcodeGenVersion: 2.37.0
+  deploymentTarget:
+    macOS: "13.0"
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_LSUIElement: YES
+    INFOPLIST_KEY_CFBundleDisplayName: MenuPy
+    PRODUCT_BUNDLE_IDENTIFIER: com.menupy.app
+packages: {}
+targets:
+  MenuPy:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources
+    resources:
+      - path: Resources
+        type: folder
+      - path: Resources/Assets.xcassets
+    settings:
+      base:
+        ENABLE_HARDENED_RUNTIME: YES
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+*.xccrashpoint
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode project user data
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# IDEs/Editors
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Misc
+*.swp
+*.swo
