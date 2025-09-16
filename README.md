@@ -2,7 +2,7 @@
 
 Eine schlanke macOS-Menüleisten-App zum schnellen Ausführen von Python‑Skripten – ohne Terminal.
 
-<img src="Resources/Assets.xcassets/AboutIcon.imageset/AboutIcon.png" alt="MenuPy Icon" width="96" />
+<img src="AppIcon.icon/Assets/App Icon MenuPy (Logo).png" alt="MenuPy Icon" width="96" />
 
 ## Features
 - Menüleisten‑App (LSUIElement): kein Dock‑Icon, immer griffbereit
@@ -82,8 +82,8 @@ Das Einstellungsfenster enthält:
 - Aktualisieren: r
 
 ## About‑Icon
-- Asset‑Pfad: `Resources/Assets.xcassets/AboutIcon.imageset/AboutIcon.png`
-- Alternativ‑Fallback: `Resources/AboutIcon.png`
+- Primärquelle (Xcode 16 Icon): `AppIcon.icon/Assets/App Icon MenuPy (Logo).png`
+- Optionaler Asset‑Katalog (falls genutzt): `Resources/Assets.xcassets/AboutIcon.imageset/AboutIcon.png`
 - Falls ein Icon nicht angezeigt wird: Product → Clean Build Folder, erneut bauen
 
 ## Hinweise
