@@ -1,0 +1,3 @@
+// Base build configuration shared by all configs.
+// Optional local overrides can live in Local.xcconfig (gitignored).
+#include? "Local.xcconfig"

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,17 +11,16 @@
 		05AD083D1363F0A6E78B081D /* MenuPyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BEF6E5E3545979F4C9FCAD /* MenuPyApp.swift */; };
 		1BF0F83694186C67B28FE628 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94EC7E6DEDE50B48302C7FC /* SettingsView.swift */; };
 		32BE8C5DDCB70B836810D62A /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4687D6CFBDDBBE43697A626 /* StatusItemController.swift */; };
-		4B05CAD42E7A0BB60066706B /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 4B05CAD32E7A0BB60066706B /* AppIcon.icon */; };
 		89FFADD25622EF5F49219161 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA983AE94F9F5C52CFF5C951 /* SettingsWindowController.swift */; };
 		961B0C5EA511A1856A9F9AFB /* ScriptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD5EED949EC510EC9116923 /* ScriptManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BD5EED949EC510EC9116923 /* ScriptManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptManager.swift; sourceTree = "<group>"; };
-		4B05CAD32E7A0BB60066706B /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
-		4B05CAD52E7A141F0066706B /* MenuPy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuPy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41289335B07DEBFBB2A1CA2A /* MenuPy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuPy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904F4919FB79AB7B1955ED12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0BEF6E5E3545979F4C9FCAD /* MenuPyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPyApp.swift; sourceTree = "<group>"; };
+		B4DC6ECE80D3BC37EAA73152 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		C4687D6CFBDDBBE43697A626 /* StatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemController.swift; sourceTree = "<group>"; };
 		CA983AE94F9F5C52CFF5C951 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
 		F94EC7E6DEDE50B48302C7FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -44,26 +43,26 @@
 		2E7CFD87B3433E9B4F2B82C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B05CAD32E7A0BB60066706B /* AppIcon.icon */,
-				4B05CAD52E7A141F0066706B /* MenuPy.app */,
+				41289335B07DEBFBB2A1CA2A /* MenuPy.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7C9B6B9CB6F44B9F8E9E1A5D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		D66185A2CD3AC20EC2BD8AA2 = {
 			isa = PBXGroup;
 			children = (
+				DB7BD4BEB43131F4631EE458 /* Config */,
 				298DA300FFDA3657D31A99F0 /* Sources */,
-				7C9B6B9CB6F44B9F8E9E1A5D /* Resources */,
 				2E7CFD87B3433E9B4F2B82C7 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		DB7BD4BEB43131F4631EE458 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B4DC6ECE80D3BC37EAA73152 /* Base.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,7 +73,6 @@
 			buildConfigurationList = 8AC274EA09E0B3C49655A4E3 /* Build configuration list for PBXNativeTarget "MenuPy" */;
 			buildPhases = (
 				BCC69AA9B106AE34F569B84B /* Sources */,
-				B5EF3D0D7E4F4A96AD3BCA1E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,7 +82,7 @@
 			packageProductDependencies = (
 			);
 			productName = MenuPy;
-			productReference = 4B05CAD52E7A141F0066706B /* MenuPy.app */;
+			productReference = 41289335B07DEBFBB2A1CA2A /* MenuPy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,6 +95,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					1344483C21FD2D5249B41673 = {
+						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,6 +110,7 @@
 			);
 			mainGroup = D66185A2CD3AC20EC2BD8AA2;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -118,17 +118,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B5EF3D0D7E4F4A96AD3BCA1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B05CAD42E7A0BB60066706B /* AppIcon.icon in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCC69AA9B106AE34F569B84B /* Sources */ = {
@@ -211,14 +200,13 @@
 		};
 		2447A2D436E984B39BCDDA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4DC6ECE80D3BC37EAA73152 /* Base.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -230,14 +218,13 @@
 		};
 		972922AC7B079D042F7FC4A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4DC6ECE80D3BC37EAA73152 /* Base.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
